@@ -292,17 +292,15 @@ def format_docstring(node: CodeDefHolder, docstring: str, indent: str):
 
     ds = [line.replace(indent, "", 1) for line in ds.splitlines()]
 
-    ds = "\n".join(ds)
-
-    ds = ds.replace(indent, node.single_indent)
-
-    ds = [node.full_indent + line for line in ds.splitlines()]
+    ds = [node.full_indent + line for line in ds]
 
     # Remove indentation from empty lines
     ds = [line.rstrip(node.single_indent) for line in ds]
 
     # rejoin docstring with newline characters between lines
     ds = "\n".join(ds)
+
+    ds = ds.replace(indent, node.single_indent)
 
     return ds
 
