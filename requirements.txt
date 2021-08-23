@@ -1,0 +1,2 @@
+openai==0.10.2
+dataclasses==0.8
