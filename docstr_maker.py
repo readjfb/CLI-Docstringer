@@ -7,7 +7,7 @@ To Do:
 import ast, os
 import openai
 import sys, getopt
-from example_constants import INDENT, FUNC_EXAMPLE, CLASS_EXAMPLE
+from query_constants import INDENT, FUNC_EXAMPLE, CLASS_EXAMPLE
 
 from typing import List, Tuple
 from dataclasses import dataclass
@@ -18,7 +18,7 @@ Adds Python docstrings to functions
 Appends _ds to output filename by default
 
 Usage:
-    docstr_maker.py -i <input_file>
+    python docstr_maker.py -i <input_file>
 
 Optional args:
  -o <output_file>
@@ -28,9 +28,9 @@ Optional args:
  -h Displays help message
 
 Example:
-    docstr_maker.py -i <input_file> -s
-    docstr_maker.py -i <input_file>
-    docstr_maker.py -i <input_file> -o <output_file> -v
+    python docstr_maker.py -i <input_file> -s
+    python docstr_maker.py -i <input_file>
+    python docstr_maker.py -i <input_file> -o <output_file> -v
 """
 
 
