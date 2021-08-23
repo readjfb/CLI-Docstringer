@@ -1,6 +1,8 @@
 # CLI-Docstringer
 CLI Application to automatically generate docstrings for Python code using OpenAI's Codex engine. Note- You need to have your own API key to use this tool, as the Codex engine is in a closed beta.
 
+All docstrings found in this project were automatically generated using the tool!
+
 ## Usage
 1. Install dependencies as needed
 2. Add API key to local bash environment variable using `export OPENAI_API_KEY="<key>`
